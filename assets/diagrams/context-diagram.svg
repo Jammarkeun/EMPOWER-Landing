@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">EMPOWER context diagram, DFD level 0</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#234B9B"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#FFFFFF"/>
+
+  <!-- The system -->
+  <rect x="505" y="50" width="190" height="720" rx="95" fill="#0B1F5E"/>
+  <text x="600" y="392" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">EMPOWER</text>
+  <text x="600" y="420" font-size="15" text-anchor="middle" fill="#CDE2FB">Web application</text>
+
+  <!-- External entities -->
+  <g font-size="17" font-weight="700" text-anchor="middle" fill="#0B1F5E">
+    <rect x="24" y="130" width="186" height="170" rx="10" fill="#E8EEF9" stroke="#234B9B" stroke-width="1.5"/>
+    <text x="117" y="210">Applicant /</text><text x="117" y="234">Employee</text>
+    <rect x="24" y="520" width="186" height="170" rx="10" fill="#E8EEF9" stroke="#234B9B" stroke-width="1.5"/>
+    <text x="117" y="611">Coordinator</text>
+    <rect x="990" y="130" width="186" height="170" rx="10" fill="#E8EEF9" stroke="#234B9B" stroke-width="1.5"/>
+    <text x="1083" y="221">HR Officer</text>
+    <rect x="990" y="520" width="186" height="170" rx="10" fill="#E8EEF9" stroke="#234B9B" stroke-width="1.5"/>
+    <text x="1083" y="611">Administrator</text>
+  </g>
+
+  <g stroke="#234B9B" stroke-width="2" fill="none" marker-end="url(#a)">
+    <!-- Applicant / Employee -->
+    <line x1="210" y1="180" x2="505" y2="180"/>
+    <line x1="510" y1="255" x2="210" y2="255"/>
+    <!-- Coordinator -->
+    <line x1="210" y1="570" x2="505" y2="570"/>
+    <line x1="510" y1="645" x2="210" y2="645"/>
+    <!-- HR Officer -->
+    <line x1="990" y1="180" x2="695" y2="180"/>
+    <line x1="690" y1="255" x2="990" y2="255"/>
+    <!-- Administrator -->
+    <line x1="990" y1="570" x2="695" y2="570"/>
+    <line x1="690" y1="645" x2="990" y2="645"/>
+  </g>
+
+  <g font-size="15" fill="#10213A">
+    <!-- Applicant flows -->
+    <text x="228" y="124">Registration, documents, Bio-Data,</text>
+    <text x="228" y="146">training confirmation, offer reply,</text>
+    <text x="228" y="168">resignation request</text>
+    <text x="228" y="279">Application status, requirements</text>
+    <text x="228" y="301">checklist, notices</text>
+
+    <!-- Coordinator flows -->
+    <text x="228" y="514">Requisitions, work schedules,</text>
+    <text x="228" y="536">DTR files, violation and</text>
+    <text x="228" y="558">incident reports</text>
+    <text x="228" y="669">Assigned client's workers,</text>
+    <text x="228" y="691">HR review outcomes</text>
+
+    <!-- HR flows -->
+    <text x="708" y="124">Requests and criteria, verifications,</text>
+    <text x="708" y="146">training records, endorsements,</text>
+    <text x="708" y="168">deployments, DTR imports</text>
+    <text x="708" y="279">Ranked candidates with reasons,</text>
+    <text x="708" y="301">inboxes, reports</text>
+
+    <!-- Administrator flows -->
+    <text x="708" y="536">Users and roles, settings and</text>
+    <text x="708" y="558">criteria, termination decisions</text>
+    <text x="708" y="669">Audit trail, sign-in activity</text>
+  </g>
+</svg>

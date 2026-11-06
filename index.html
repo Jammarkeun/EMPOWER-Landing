@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMPOWER | Web-Based Recruitment, Deployment, and Competency-Based Job Matching DSS</title>
+<meta name="description" content="EMPOWER: A Web-Based Recruitment, Deployment, and Competency-Based Job Matching Decision Support System for CDE Manpower Services. Capstone project, College of Computer Studies, Laguna State Polytechnic University.">
+<meta name="theme-color" content="#0B1F5E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EMPOWER | Recruitment and deployment, on one record">
+<meta property="og:description" content="A web-based recruitment, deployment, and competency-based job matching decision support system for CDE Manpower Services.">
+<meta property="og:url" content="https://jammarkeun.github.io/EMPOWER-Landing/">
+<meta property="og:image" content="https://jammarkeun.github.io/EMPOWER-Landing/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol><symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol><symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol><symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></symbol><symbol id="i-zoom-out" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="8" x2="14" y1="11" y2="11"/></symbol><symbol id="i-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol><symbol id="i-user-plus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></symbol><symbol id="i-user-round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol><symbol id="i-folder-check" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/><path d="m9 13 2 2 4-4"/></symbol><symbol id="i-folder-open" viewBox="0 0 24 24"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></symbol><symbol id="i-clipboard-list" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></symbol><symbol id="i-clipboard-check" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol><symbol id="i-id-card" viewBox="0 0 24 24"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></symbol><symbol id="i-calendar-clock" viewBox="0 0 24 24"><path d="M16 14v2.2l1.6 1"/><path d="M16 2v3"/><path d="M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338"/><path d="M3 9h5.859"/><path d="M8 2v3"/><circle cx="16" cy="16" r="6"/></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"/></symbol><symbol id="i-log-out" viewBox="0 0 24 24"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></symbol><symbol id="i-building-2" viewBox="0 0 24 24"><path d="M10 12h4"/><path d="M10 8h4"/><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/></symbol><symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-scroll-text" viewBox="0 0 24 24"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></symbol><symbol id="i-chart-column" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol><symbol id="i-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3"/><path d="M12 19H3"/><path d="M14 3v4"/><path d="M16 17v4"/><path d="M21 12h-9"/><path d="M21 19h-5"/><path d="M21 5h-7"/><path d="M8 10v4"/><path d="M8 12H3"/></symbol><symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/></symbol><symbol id="i-code-xml" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></symbol><symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></symbol><symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></symbol><symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol><symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="m19 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"/><path d="m5 8 3 8a5 5 0 0 1-6 0zV7"/><path d="M7 21h10"/></symbol><symbol id="i-workflow" viewBox="0 0 24 24"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol><symbol id="i-circle-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></symbol><symbol id="i-expand" viewBox="0 0 24 24"><path d="m15 15 6 6"/><path d="m15 9 6-6"/><path d="M21 16v5h-5"/><path d="M21 8V3h-5"/><path d="M3 16v5h5"/><path d="m3 21 6-6"/><path d="M3 8V3h5"/><path d="M9 9 3 3"/></symbol><symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M4.929 4.929 19.07 19.071"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></symbol></svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="EMPOWER, back to top">
+      <img src="assets/img/logo-mark.png" width="40" height="40" alt="">
+      <span class="brand-text"><strong>EMPOWER</strong><small>CDE Manpower Services</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Page sections">
+      <ul>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#problem">Problem &amp; Objectives</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#matching">Matching</a></li>
+        <li><a href="#diagrams">Diagrams</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System.git" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View Repository
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="hero-school">Laguna State Polytechnic University <span aria-hidden="true">&middot;</span> College of Computer Studies <span aria-hidden="true">&middot;</span> Capstone Project</p>
+      <h1>Recruitment and deployment, on one record</h1>
+      <p class="hero-title"><strong>EMPOWER:</strong> A Web-Based Recruitment, Deployment, and Competency-Based Job Matching Decision Support System for CDE Manpower Services</p>
+      <p class="hero-sub">From an applicant walking into the office through to placement and separation, EMPOWER keeps every document, decision, and change on a single record, and shows HR exactly why each candidate is recommended.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System.git" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View Repository
+        </a>
+        <a class="btn btn-ghost" href="#matching">See how matching works<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="window">
+        <div class="window-bar"><span></span><span></span><span></span></div>
+        <img src="assets/screenshots/hr-dashboard.webp" width="1440" height="900" alt="">
+      </div>
+      <div class="phone"><img src="assets/screenshots/mobile-portal-overview.webp" width="780" height="1688" alt=""></div>
+      <span class="float-pill float-pill-a"><i></i>Folder 1 - Ready for Deployment</span>
+      <span class="float-pill float-pill-b"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>Every score shows its reasons</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap stats-wrap">
+  <dl class="stats">
+    <div class="stat"><dt>Lifecycle stages</dt><dd class="stat-num">6</dd><dd>Application to deployment, in an enforced order</dd></div>
+    <div class="stat"><dt>Requirement documents</dt><dd class="stat-num">18</dd><dd>12 primary and 6 final, each verified on the record</dd></div>
+    <div class="stat"><dt>Folders, derived</dt><dd class="stat-num">3</dd><dd>Filed from what was verified, never typed by hand</dd></div>
+    <div class="stat"><dt>Signed-in roles</dt><dd class="stat-num">4</dd><dd>Administrator, HR officer, coordinator, applicant or employee</dd></div>
+  </dl>
+</div>
+
+<main id="main">
+
+<!-- TEAM: edit names and roles here. -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Team</p>
+      <h2>Team members &amp; adviser</h2>
+      <p class="lead">College of Computer Studies, Laguna State Polytechnic University.</p>
+    </div>
+    <ul class="people reveal">
+      <li class="person"><span class="avatar" aria-hidden="true">JC</span><div><p class="person-name">John Mark D. Cabuhat</p><p class="person-role">Researcher</p></div></li>
+      <li class="person"><span class="avatar" aria-hidden="true">DM</span><div><p class="person-name">Daniel Matthew B. Mejorada</p><p class="person-role">Researcher</p></div></li>
+      <li class="person"><span class="avatar" aria-hidden="true">JG</span><div><p class="person-name">Justine Benedict L. Gelba</p><p class="person-role">Researcher</p></div></li>
+      <li class="person"><span class="avatar" aria-hidden="true">GM</span><div><p class="person-name">Gener F. Mosico, MSIT</p><p class="person-role">Thesis Adviser</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" id="problem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Problem &amp; Objectives</p>
+      <h2>Careful records that never connect</h2>
+      <p class="lead">CDE Manpower Services is a manpower agency in Sta. Cruz, Laguna. It recruits workers and supplies them to client companies. Each set of records is kept carefully on its own, but nothing joins them.</p>
+    </div>
+
+    <div class="grid g2 reveal">
+      <article class="card">
+        <h3>Current situation</h3>
+        <ul class="list-dots">
+          <li>Applicant records sit in physical folders.</li>
+          <li>Employee details live across Excel files and Google Sheets.</li>
+          <li>Records of workplace violations are kept apart from both.</li>
+          <li>Folders are moved by hand, and a misfiled folder makes a qualified applicant invisible.</li>
+          <li>The choice of whom to send is made from an officer's memory and judgment, and the reasoning is never written down.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Why it matters</h3>
+        <p>When a client company asks for ten production helpers, someone has to go through the folders by hand to find out who is available and whose documents are complete.</p>
+        <p>When that client asks why these five were sent and not five others, or an applicant asks why they were not chosen, there is no record to point to. A searchable database would fix the first problem but not the second. That is why EMPOWER is a decision support system: it gathers the information, applies rules a person defined, shows its reasoning, and leaves the decision to a person.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-head reveal">What changes with EMPOWER</h3>
+    <div class="table-card reveal">
+      <table class="compare">
+        <thead><tr><th scope="col">Area</th><th scope="col">Before</th><th scope="col">With EMPOWER</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Worker records</th><td data-label="Before">Paper folders, spreadsheets, and separate violation files</td><td data-label="With EMPOWER">One record from first application through to separation</td></tr>
+          <tr><th scope="row">Folder filing</th><td data-label="Before">Moved by hand, and can be misfiled</td><td data-label="With EMPOWER">Folder 1, 2, or 3 worked out from the documents actually verified</td></tr>
+          <tr><th scope="row">Recruitment steps</th><td data-label="Before">Depend on someone remembering to do them</td><td data-label="With EMPOWER">Only permitted stage moves exist, so checks cannot be skipped</td></tr>
+          <tr><th scope="row">Choosing candidates</th><td data-label="Before">Memory and judgment, with no written reasoning</td><td data-label="With EMPOWER">A ranked list with line-by-line reasons, and HR still decides</td></tr>
+          <tr><th scope="row">Accountability</th><td data-label="Before">Changes are spread across folders and spreadsheets</td><td data-label="With EMPOWER">An audit trail of who changed which field, from what to what</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="objectives reveal">
+      <div class="objectives-intro">
+        <h3>Objectives</h3>
+        <p>To develop a web-based system that keeps each worker's recruitment, deployment, and employment record in one place for CDE Manpower Services, and supports explainable deployment decisions.</p>
+        <p class="scope-note"><svg class="icon" aria-hidden="true"><use href="#i-ban"/></svg><span><strong>Out of scope by design:</strong> payroll and client company logins.</span></p>
+      </div>
+      <ol class="objective-list">
+        <li>Centralize applicant, employee, disciplinary, and separation records in one system.</li>
+        <li>Derive the Folder 1, 2, and 3 filing automatically from verified documents.</li>
+        <li>Provide explainable, criteria-based ranking of applicants for each manpower request.</li>
+        <li>Enforce CDE's recruitment and deployment sequence on the server.</li>
+        <li>Give coordinators, applicants, and employees secure, role-limited self-service.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="methodology">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Methodology</p>
+      <h2>Built in iterations with the agency</h2>
+      <p class="lead">EMPOWER was developed using an Agile / Rapid Application Development approach from June to November 2026, with consultations with CDE and panel recommendations folded back into each iteration.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-months" aria-hidden="true"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>
+      <ol class="timeline-rows">
+        <li class="phase">
+          <div class="phase-name"><strong>Planning</strong><span>Jun 1 to Jul 15</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:0;width:24.59%"></span></div><p>Scope and system objectives set with CDE Manpower Services.</p></div>
+        </li>
+        <li class="phase">
+          <div class="phase-name"><strong>Requirements</strong><span>Jul 16 to Aug 15</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:24.59%;width:16.94%"></span></div><p>Consultations and data checklists with the agency, documenting its folders, forms, and process.</p></div>
+        </li>
+        <li class="phase">
+          <div class="phase-name"><strong>Design</strong><span>Jul 20 to Aug 31</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:26.78%;width:23.5%"></span></div><p>Database schema, REST API contract, screen wireframes, and the applicant lifecycle map.</p></div>
+        </li>
+        <li class="phase">
+          <div class="phase-name"><strong>Development</strong><span>Aug 1 to Sep 15</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:33.33%;width:25.14%"></span></div><p>Laravel API and React interface built module by module.</p></div>
+        </li>
+        <li class="phase">
+          <div class="phase-name"><strong>Testing</strong><span>Sep 16 to Oct 20</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:58.47%;width:19.13%"></span></div><p>Automated backend and frontend suites, with continuous integration across SQLite, MariaDB, and PostgreSQL.</p></div>
+        </li>
+        <li class="phase">
+          <div class="phase-name"><strong>Deployment</strong><span>Oct 21 to Nov 30</span></div>
+          <div class="phase-body"><div class="track" aria-hidden="true"><span style="left:77.6%;width:22.4%"></span></div><p>Supabase for the final defense, with XAMPP MariaDB for local demonstrations.</p></div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="grid g2 method-cards reveal">
+      <article class="card">
+        <h3>Evaluation</h3>
+        <p>System testing covers the end-to-end workflows, role-based access, report exports, and the audit trail. The user evaluation looks at ease of use, attitude, intention to use, and system quality, with ISO/IEC 25010 as its basis.</p>
+      </article>
+      <article class="card">
+        <h3>Built with</h3>
+        <ul class="chips">
+          <li>Laravel 12</li><li>PHP 8.3</li><li>React 18</li><li>Vite</li><li>Tailwind CSS</li><li>Chart.js</li><li>Leaflet</li><li>MySQL / MariaDB</li><li>Supabase PostgreSQL 17</li><li>FastAPI + PaddleOCR</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="features">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">System Features</p>
+      <h2>One record, six stages</h2>
+      <p class="lead">An applicant cannot go from "Applied" straight to "Deployed", because that path does not exist. Each stage is dated and attributed to the person who recorded it.</p>
+    </div>
+
+    <ol class="stepper reveal">
+      <li><span class="step-dot">1</span><h3>Application</h3><p>Walk-in or online registration, confirmed in person.</p></li>
+      <li><span class="step-dot">2</span><h3>Screening</h3><p>Staff check the applicant's identity against their documents.</p></li>
+      <li><span class="step-dot">3</span><h3>Requirements</h3><p>Documents verified, and the folder updates itself.</p></li>
+      <li><span class="step-dot">4</span><h3>Training</h3><p>A recorded completion is needed before endorsement.</p></li>
+      <li><span class="step-dot">5</span><h3>Client evaluation</h3><p>HR endorses, and the client's decision is recorded.</p></li>
+      <li><span class="step-dot">6</span><h3>Deployed</h3><p>The applicant becomes an employee and keeps their history.</p></li>
+    </ol>
+
+    <div class="filter-bar reveal">
+      <h3 class="filter-title" id="filter-title">What each role can do</h3>
+      <div class="filter" id="feature-filter" role="group" aria-labelledby="filter-title">
+        <button type="button" data-role="all" aria-pressed="true">All</button>
+        <button type="button" data-role="hr" aria-pressed="false">HR Officer</button>
+        <button type="button" data-role="coordinator" aria-pressed="false">Coordinator</button>
+        <button type="button" data-role="portal" aria-pressed="false">Applicant &amp; Employee</button>
+        <button type="button" data-role="admin" aria-pressed="false">Administrator</button>
+      </div>
+      <p class="filter-count" id="feature-count" role="status"></p>
+    </div>
+
+    <ul class="grid g3 feature-grid" id="feature-grid">
+      <li class="card feature" data-roles="hr coordinator">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard-list"/></svg></span>
+        <h3>Requests &amp; Requisitions</h3>
+        <p>A coordinator sends the client's manpower requisition. Once HR approves it, the request is created, with headcount tracked as workers are deployed.</p>
+        <p class="roles"><span>HR</span><span>Coordinator</span></p>
+      </li>
+      <li class="card feature" data-roles="hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-workflow"/></svg></span>
+        <h3>Applicant Lifecycle</h3>
+        <p>Each applicant moves through a map of permitted stages, with every change dated and attributed.</p>
+        <p class="roles"><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-folder-check"/></svg></span>
+        <h3>Digital Folder System</h3>
+        <p>The agency's Folder 1, 2, and 3 filing is recalculated whenever a document changes, and expiring documents are flagged.</p>
+        <p class="roles"><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="portal hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-file-text"/></svg></span>
+        <h3>Digital Bio-Data</h3>
+        <p>Applicants fill in their Bio-Data online, save drafts, and send it for HR review, in place of uploading a separate copy.</p>
+        <p class="roles"><span>Applicant</span><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="hr portal">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-graduation-cap"/></svg></span>
+        <h3>Training</h3>
+        <p>Sessions with times, rosters, attendance, and completion. Applicants confirm through the portal that they will attend, and HR is notified.</p>
+        <p class="roles"><span>HR</span><span>Applicant</span></p>
+      </li>
+      <li class="card feature feature-accent" data-roles="hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+        <h3>Competency-Based Matching</h3>
+        <p>Ranks eligible applicants against criteria HR sets for the request, and shows how every point was awarded.</p>
+        <p class="roles"><span>HR</span></p>
+        <a class="feature-link" href="#matching">See how it scores<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </li>
+      <li class="card feature" data-roles="hr coordinator">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+        <h3>Endorsement &amp; Deployment</h3>
+        <p>Records endorsements, client decisions, placements, and reassignments. Deploying stays a separate, deliberate act by a person.</p>
+        <p class="roles"><span>HR</span><span>Coordinator (view)</span></p>
+      </li>
+      <li class="card feature" data-roles="hr coordinator">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar-clock"/></svg></span>
+        <h3>Attendance &amp; DTR</h3>
+        <p>Coordinators propose schedules and hand over DTR files. HR compares them, and a missing DTR is shown as awaiting, never as an absence.</p>
+        <p class="roles"><span>HR</span><span>Coordinator</span></p>
+      </li>
+      <li class="card feature" data-roles="coordinator hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-flag"/></svg></span>
+        <h3>Violations &amp; Incidents</h3>
+        <p>Coordinators file violation and incident reports for HR to review, against the same record as the worker's employment.</p>
+        <p class="roles"><span>Coordinator</span><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="portal hr admin">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-log-out"/></svg></span>
+        <h3>Resignation &amp; Termination</h3>
+        <p>Employees request resignation through the portal. Termination goes from HR to the Administrator and back, with a checklist before it is final.</p>
+        <p class="roles"><span>Employee</span><span>HR</span><span>Admin</span></p>
+      </li>
+      <li class="card feature" data-roles="portal">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-smartphone"/></svg></span>
+        <h3>Self-Service Portal</h3>
+        <p>Register, see which documents to bring, send copies ahead, follow progress, and answer a placement offer, on a phone or a desktop.</p>
+        <p class="roles"><span>Applicant</span><span>Employee</span></p>
+      </li>
+      <li class="card feature" data-roles="hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-building-2"/></svg></span>
+        <h3>Client Companies</h3>
+        <p>Client records with departments, positions, a map pin for the location, and company documents.</p>
+        <p class="roles"><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="hr">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart-column"/></svg></span>
+        <h3>Reports</h3>
+        <p>Ten report types, from the employee masterlist to the annual summary, exported to PDF, Excel, or CSV.</p>
+        <p class="roles"><span>HR</span></p>
+      </li>
+      <li class="card feature" data-roles="admin">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-scroll-text"/></svg></span>
+        <h3>Audit Trail &amp; Retention</h3>
+        <p>Who changed which field, from what to what. Records past their retention estimate are listed for review, and nothing is deleted automatically.</p>
+        <p class="roles"><span>Admin</span></p>
+      </li>
+      <li class="card feature" data-roles="admin">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-sliders-horizontal"/></svg></span>
+        <h3>Users, Roles &amp; Settings</h3>
+        <p>Role-limited access, coordinators scoped to their assigned client, and score bands and criteria an administrator can tune without a programmer.</p>
+        <p class="roles"><span>Admin</span></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-navy" id="matching">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow eyebrow-light">Decision Support</p>
+      <h2>A ranking anyone can check</h2>
+      <p class="lead">Scoring is rule-based, not AI. Every point traces back to a weight an HR officer entered and a value on the applicant's record, so a recommendation can be defended to a client or to an applicant who was not selected.</p>
+    </div>
+
+    <div class="match-layout">
+      <ol class="match-steps reveal">
+        <li><h3>HR sets the criteria</h3><p>For each request, HR chooses what counts and how much each factor is worth.</p></li>
+        <li><h3>Gates pass or fail</h3><p>Mandatory rules such as age or height add no points. Failing one means the applicant is not recommended.</p></li>
+        <li><h3>Scored criteria earn points</h3><p>Education, experience, certifications, skills, availability, distance, communication, and reliability.</p></li>
+        <li><h3>The percentage becomes a band</h3><p>Highly recommended from 85%, recommended from 70%, and reserve pool from 50%. An administrator can change the cut-offs.</p></li>
+        <li><h3>A person decides</h3><p>The system recommends. It never hires. Deployment stays a separate act by HR.</p></li>
+      </ol>
+
+      <div class="match-demo reveal" id="match-demo">
+        <div class="match-demo-head">
+          <div>
+            <p class="demo-kicker">Try it: one request, three applicants</p>
+            <h3>Production Helper</h3>
+          </div>
+          <span class="tag-illustrative"><svg class="icon" aria-hidden="true"><use href="#i-circle-alert"/></svg>Illustrative, invented data</span>
+        </div>
+        <div class="match-list" id="match-list" role="group" aria-label="Choose an applicant to see their score breakdown"></div>
+        <div class="match-trace" id="match-trace" aria-live="polite"></div>
+        <noscript><p class="noscript-note">Turn on JavaScript to step through the worked example. In short: points earned over points available, scaled by the share of mandatory gates met, then placed in a band.</p></noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="diagrams">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">System Diagrams</p>
+      <h2>How the system fits together</h2>
+      <p class="lead">Select a diagram to view it full size and zoom in.</p>
+    </div>
+    <div class="grid g2 diagram-grid reveal">
+      <figure class="diagram">
+        <a href="assets/diagrams/system-architecture.svg" data-gallery="diagrams" target="_blank" rel="noopener"><img src="assets/diagrams/system-architecture.svg" width="1200" height="820" alt="System architecture: users in a browser, a React single-page app, a Laravel REST API, and the database, document storage, and optional OCR service." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a>
+        <figcaption>System Architecture</figcaption>
+      </figure>
+      <figure class="diagram">
+        <a href="assets/diagrams/context-diagram.svg" data-gallery="diagrams" target="_blank" rel="noopener"><img src="assets/diagrams/context-diagram.svg" width="1200" height="820" alt="Context diagram showing the data flowing between EMPOWER and the applicant or employee, HR officer, coordinator, and administrator." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a>
+        <figcaption>Context Diagram (DFD Level 0)</figcaption>
+      </figure>
+      <figure class="diagram">
+        <a href="assets/diagrams/use-case.svg" data-gallery="diagrams" target="_blank" rel="noopener"><img src="assets/diagrams/use-case.svg" width="1300" height="1520" alt="UML use case diagram of EMPOWER showing the guest, applicant or employee, coordinator, HR officer, administrator, and scheduler." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a>
+        <figcaption>Use Case Diagram (UML)</figcaption>
+      </figure>
+      <div class="diagram-stack">
+        <figure class="diagram">
+          <a href="assets/diagrams/erd-recruitment.svg" data-gallery="diagrams" target="_blank" rel="noopener"><img src="assets/diagrams/erd-recruitment.svg" alt="Entity-relationship diagram of the recruitment tables." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a>
+          <figcaption>Entity-Relationship Diagram: Recruitment</figcaption>
+        </figure>
+        <figure class="diagram">
+          <a href="assets/diagrams/erd-employment.svg" data-gallery="diagrams" target="_blank" rel="noopener"><img src="assets/diagrams/erd-employment.svg" alt="Entity-relationship diagram of the employment tables." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a>
+          <figcaption>Entity-Relationship Diagram: Employment</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="screenshots">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Screenshots</p>
+      <h2>The system, role by role</h2>
+      <p class="lead">Real screens from EMPOWER. Every applicant and record shown is synthetic demo data, and the name of the agency's client company is blurred.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Screens by role" id="shot-tabs">
+      <button type="button" role="tab" id="tab-hr" aria-controls="panel-hr" aria-selected="true"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>HR Officer</button>
+      <button type="button" role="tab" id="tab-coord" aria-controls="panel-coord" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Coordinator</button>
+      <button type="button" role="tab" id="tab-portal" aria-controls="panel-portal" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-user-round"/></svg>Applicant Portal</button>
+      <button type="button" role="tab" id="tab-admin" aria-controls="panel-admin" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-shield-check"/></svg>Administrator</button>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-hr" aria-labelledby="tab-hr" tabindex="0">
+      <h3 class="panel-title">HR Officer</h3>
+      <div class="grid g2 shots">
+        <figure class="shot"><a href="assets/screenshots/hr-dashboard.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-dashboard.webp" width="1440" height="900" alt="HR dashboard with active applicants, positions to fill, open manpower requests, and items needing attention." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Dashboard</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-applicants.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-applicants.webp" width="1440" height="900" alt="Applicant list with status, folder category, and application date for each applicant." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Applicants, with status and derived folder</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-applicant-detail.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-applicant-detail.webp" width="1440" height="900" alt="An applicant's record showing the six-stage progress bar, Folder 1 status, and the training requirement." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Applicant record and lifecycle stages</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-documents.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-documents.webp" width="1440" height="900" alt="Documents page listing each applicant's verified document count." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Document verification</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-trainings.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-trainings.webp" width="1440" height="900" alt="Training sessions with attendance counts and an applicant waiting for training." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Training sessions and attendance</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-deployments.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-deployments.webp" width="1440" height="900" alt="Deployments table listing each employee's client, position, date, and status." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Deployments</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-attendance.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-attendance.webp" width="1440" height="900" alt="Attendance review queue explaining that missing DTR data is not treated as an absence." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Attendance (DTR) review queue</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/hr-reports.webp" data-gallery="hr" target="_blank" rel="noopener"><img src="assets/screenshots/hr-reports.webp" width="1440" height="900" alt="Reports page with ten report types, filters, and PDF, Excel, and CSV export." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Reports and exports</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-coord" aria-labelledby="tab-coord" tabindex="0">
+      <h3 class="panel-title">Coordinator</h3>
+      <div class="grid g2 shots">
+        <figure class="shot"><a href="assets/screenshots/coord-dashboard.webp" data-gallery="coord" target="_blank" rel="noopener"><img src="assets/screenshots/coord-dashboard.webp" width="1440" height="900" alt="Coordinator dashboard scoped to one assigned client, with report and requisition actions." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Dashboard, scoped to one assigned client</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/coord-requisition-form.webp" data-gallery="coord" target="_blank" rel="noopener"><img src="assets/screenshots/coord-requisition-form.webp" width="1440" height="900" alt="The digital version of CDE's Manpower Requisition Form." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Manpower Requisition Form</figcaption></figure>
+        <figure class="shot"><a href="assets/screenshots/coord-schedules.webp" data-gallery="coord" target="_blank" rel="noopener"><img src="assets/screenshots/coord-schedules.webp" width="1440" height="900" alt="Work schedules page, where a coordinator sends schedules to HR for approval." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Work schedules, sent to HR for approval</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-portal" aria-labelledby="tab-portal" tabindex="0">
+      <h3 class="panel-title">Applicant Portal</h3>
+      <div class="portal-shots">
+        <div class="grid g2 shots">
+          <figure class="shot"><a href="assets/screenshots/portal-overview.webp" data-gallery="portal" target="_blank" rel="noopener"><img src="assets/screenshots/portal-overview.webp" width="1440" height="900" alt="Applicant portal overview with current status, six-stage progress, and documents verified." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>My application, with stage-by-stage progress</figcaption></figure>
+          <figure class="shot"><a href="assets/screenshots/portal-documents.webp" data-gallery="portal" target="_blank" rel="noopener"><img src="assets/screenshots/portal-documents.webp" width="1440" height="900" alt="Portal documents page listing each requirement and its status." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>My documents</figcaption></figure>
+          <figure class="shot"><a href="assets/screenshots/portal-bio-data.webp" data-gallery="portal" target="_blank" rel="noopener"><img src="assets/screenshots/portal-bio-data.webp" width="1440" height="900" alt="Five-step digital Bio-Data form with save draft and continue actions." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Digital Bio-Data form</figcaption></figure>
+        </div>
+        <figure class="shot shot-phone"><a href="assets/screenshots/mobile-portal-overview.webp" data-gallery="portal" target="_blank" rel="noopener"><img src="assets/screenshots/mobile-portal-overview.webp" width="780" height="1688" alt="The applicant portal on a phone, showing status and progress." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>On a phone</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="tab-panel" role="tabpanel" id="panel-admin" aria-labelledby="tab-admin" tabindex="0">
+      <h3 class="panel-title">Administrator</h3>
+      <div class="shots shots-single">
+        <figure class="shot"><a href="assets/screenshots/admin-audit-trail.webp" data-gallery="admin" target="_blank" rel="noopener"><img src="assets/screenshots/admin-audit-trail.webp" width="1440" height="900" alt="Audit trail listing who performed each action, on which record, and what changed." loading="lazy"><span class="expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></a><figcaption>Audit trail: who did what, on which record, and what changed</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="links">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Links</p>
+      <h2>Source code and documentation</h2>
+    </div>
+    <div class="grid g2 link-grid reveal">
+      <a class="card link-card" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System.git" target="_blank" rel="noopener">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
+        <span class="link-body"><span class="link-label">Repository</span><strong>Source code on GitHub</strong><span class="link-note">The Laravel API, React frontend, tests, and documentation.</span></span>
+        <svg class="icon link-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+      <a class="card link-card" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System/blob/main/README.md" target="_blank" rel="noopener">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-code-xml"/></svg></span>
+        <span class="link-body"><span class="link-label">Documentation</span><strong>README and setup guide</strong><span class="link-note">What it does, what it is built with, and how to run it.</span></span>
+        <svg class="icon link-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+      <a class="card link-card" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System/blob/main/docs/system-overview.md" target="_blank" rel="noopener">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-book-open"/></svg></span>
+        <span class="link-body"><span class="link-label">Documentation</span><strong>How EMPOWER works</strong><span class="link-note">A plain-language walkthrough of the problem, the flow, and the reasoning.</span></span>
+        <svg class="icon link-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+      <a class="card link-card" href="https://github.com/Jammarkeun/EMPOWER-A-Web-Based-Recruitment-Deployment-and-Competency-Based-Job-Matching-DSS-System/blob/main/docs/04-api/rest-api-contract.md" target="_blank" rel="noopener">
+        <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
+        <span class="link-body"><span class="link-label">Documentation</span><strong>REST API contract</strong><span class="link-note">The endpoints behind every screen in the system.</span></span>
+        <svg class="icon link-arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo-mark.png" width="40" height="40" alt="" loading="lazy">
+      <p><strong>EMPOWER</strong> &middot; Capstone Project &middot; College of Computer Studies, Laguna State Polytechnic University &middot; 2026</p>
+    </div>
+    <p class="footer-note">An academic project built for CDE Manpower Services. This page is not the agency's official website, and it holds no applicant data.</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-labelledby="lb-caption">
+  <div class="lb-bar">
+    <p class="lb-caption" id="lb-caption"></p>
+    <p class="lb-count" id="lb-count"></p>
+    <div class="lb-actions">
+      <button type="button" class="lb-btn" id="lb-zoom" aria-pressed="false" aria-label="Zoom in"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></button>
+      <a class="lb-btn" id="lb-open" target="_blank" rel="noopener" aria-label="Open the image in a new tab"><svg class="icon" aria-hidden="true"><use href="#i-external-link"/></svg></a>
+      <button type="button" class="lb-btn" id="lb-close" aria-label="Close" autofocus><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+    <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt=""></div>
+    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next image"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+  </div>
+</dialog>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

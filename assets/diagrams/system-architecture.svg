@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" font-family="Arial, Helvetica, sans-serif" role="img" aria-labelledby="t">
+  <title id="t">EMPOWER system architecture</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#234B9B"/></marker>
+  </defs>
+  <rect width="1200" height="820" fill="#FFFFFF"/>
+
+  <!-- Users -->
+  <rect x="30" y="20" width="1140" height="140" rx="16" fill="#F7F9FC" stroke="#DCE3ED"/>
+  <text x="54" y="50" font-size="16" font-weight="700" fill="#0B1F5E">Users, in a web browser</text>
+  <g font-size="16" text-anchor="middle" fill="#10213A">
+    <rect x="54" y="68" width="255" height="70" rx="12" fill="#fff" stroke="#234B9B"/><text x="181" y="109">Applicant / Employee</text>
+    <rect x="335" y="68" width="255" height="70" rx="12" fill="#fff" stroke="#234B9B"/><text x="462" y="109">HR Officer</text>
+    <rect x="616" y="68" width="255" height="70" rx="12" fill="#fff" stroke="#234B9B"/><text x="743" y="109">Coordinator</text>
+    <rect x="897" y="68" width="249" height="70" rx="12" fill="#fff" stroke="#234B9B"/><text x="1021" y="109">Administrator</text>
+  </g>
+
+  <line x1="470" y1="160" x2="470" y2="196" stroke="#234B9B" stroke-width="2" marker-end="url(#a)"/>
+  <text x="484" y="184" font-size="14" fill="#4A5A72">HTTPS</text>
+
+  <!-- Frontend -->
+  <rect x="30" y="198" width="880" height="98" rx="16" fill="#234B9B"/>
+  <text x="470" y="238" font-size="20" font-weight="700" text-anchor="middle" fill="#fff">React 18 single-page application</text>
+  <text x="470" y="268" font-size="15" text-anchor="middle" fill="#E8EEF9">Vite, Tailwind CSS, Chart.js, Leaflet</text>
+  <rect x="960" y="198" width="210" height="98" rx="16" fill="#F7F9FC" stroke="#DCE3ED"/>
+  <text x="1065" y="240" font-size="15" text-anchor="middle" fill="#10213A">OpenStreetMap</text>
+  <text x="1065" y="264" font-size="15" text-anchor="middle" fill="#4A5A72">map tiles</text>
+  <line x1="958" y1="247" x2="912" y2="247" stroke="#234B9B" stroke-width="2" marker-end="url(#a)"/>
+
+  <line x1="470" y1="296" x2="470" y2="336" stroke="#234B9B" stroke-width="2" marker-end="url(#a)"/>
+  <text x="484" y="322" font-size="14" fill="#4A5A72">REST API at /api/v1, JSON, Sanctum tokens</text>
+
+  <!-- Backend -->
+  <rect x="30" y="338" width="1140" height="262" rx="16" fill="#0B1F5E"/>
+  <text x="54" y="372" font-size="20" font-weight="700" fill="#fff">Laravel 12 API (PHP 8.3)</text>
+  <g font-size="15" fill="#10213A">
+    <rect x="54" y="390" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="72" y="424" font-weight="700">Access control</text>
+    <text x="72" y="450" fill="#4A5A72">Sanctum, spatie/laravel-permission</text>
+
+    <rect x="425" y="390" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="443" y="424" font-weight="700">Lifecycle and folders</text>
+    <text x="443" y="450" fill="#4A5A72">Permitted stages, derived filing</text>
+
+    <rect x="796" y="390" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="814" y="424" font-weight="700">Competency scoring</text>
+    <text x="814" y="450" fill="#4A5A72">Rule-based ranking with reasons</text>
+
+    <rect x="54" y="494" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="72" y="528" font-weight="700">Reports</text>
+    <text x="72" y="554" fill="#4A5A72">dompdf, PhpSpreadsheet</text>
+
+    <rect x="425" y="494" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="443" y="528" font-weight="700">Audit trail and notifications</text>
+    <text x="443" y="554" fill="#4A5A72">Who changed what, and when</text>
+
+    <rect x="796" y="494" width="350" height="88" rx="12" fill="#fff"/>
+    <text x="814" y="528" font-weight="700">Scheduled tasks</text>
+    <text x="814" y="554" fill="#4A5A72">Daily document expiry warnings</text>
+  </g>
+
+  <g stroke="#234B9B" stroke-width="2" marker-end="url(#a)">
+    <line x1="210" y1="600" x2="210" y2="648"/>
+    <line x1="600" y1="600" x2="600" y2="648"/>
+    <line x1="990" y1="600" x2="990" y2="648"/>
+  </g>
+
+  <!-- Data and services -->
+  <g font-size="15" fill="#10213A">
+    <rect x="30" y="650" width="360" height="150" rx="16" fill="#F7F9FC" stroke="#234B9B"/>
+    <text x="52" y="686" font-size="17" font-weight="700" fill="#0B1F5E">Database</text>
+    <text x="52" y="720">MySQL / MariaDB for local demos</text>
+    <text x="52" y="746">Supabase PostgreSQL 17 for the</text>
+    <text x="52" y="770">final defense</text>
+
+    <rect x="420" y="650" width="360" height="150" rx="16" fill="#F7F9FC" stroke="#234B9B"/>
+    <text x="442" y="686" font-size="17" font-weight="700" fill="#0B1F5E">Document storage</text>
+    <text x="442" y="720">Local disk for demos</text>
+    <text x="442" y="746">Supabase Storage private bucket,</text>
+    <text x="442" y="770">with expiring signed URLs</text>
+
+    <rect x="810" y="650" width="360" height="150" rx="16" fill="#F7F9FC" stroke="#234B9B"/>
+    <text x="832" y="686" font-size="17" font-weight="700" fill="#0B1F5E">Document reading (optional)</text>
+    <text x="832" y="720">FastAPI service</text>
+    <text x="832" y="746">PaddleOCR</text>
+  </g>
+</svg>
